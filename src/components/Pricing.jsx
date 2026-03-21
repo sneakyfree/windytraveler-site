@@ -53,7 +53,7 @@ const tabs = [
 ];
 
 export default function Pricing() {
-  const [billing, setBilling] = useState('annual');
+  const [billing, setBilling] = useState('lifetime');
 
   return (
     <section id="pricing" className="py-24 px-6 relative overflow-hidden">
