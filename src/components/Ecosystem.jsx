@@ -40,6 +40,19 @@ export default function Ecosystem() {
           <p className="text-gray-500 text-sm">
             Start anywhere. Connect everything. <span className="text-windy-amber">Your voice is the key.</span>
           </p>
+
+          {/* The lab line, carried across all three Windy sites. Opinion and
+              stated intent — nothing here is a measurement. */}
+          <div className="mt-12 pt-8 border-t border-gray-800/50 max-w-3xl mx-auto">
+            <p className="text-lg font-bold text-white leading-snug">
+              Nobody is more passionate about the great art of voice-to-text and translation
+              than Windy Word, Windy Translate and Windy Traveler.
+            </p>
+            <p className="text-sm text-gray-500 leading-relaxed mt-3">
+              The packs above are served from our own laboratory, which refines these models
+              continually. Buy a region once and it is yours — and it gets better as we do.
+            </p>
+          </div>
         </div>
       </div>
     </section>
