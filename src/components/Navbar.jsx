@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
+// Windy Traveler has no standalone app — it runs as the /translate route
+// inside Windy Word.
+const APP_URL = 'https://app.windyword.ai/translate';
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const links = [
@@ -23,6 +27,9 @@ export default function Navbar() {
             {links.map(l => (
               <a key={l.name} href={l.href} className="text-sm text-gray-400 hover:text-windy-amber transition-colors">{l.name}</a>
             ))}
+            <a href={APP_URL} className="text-sm text-gray-400 hover:text-windy-amber transition-colors">
+              Open in Windy Word
+            </a>
             <a href="#pricing" className="px-5 py-2.5 bg-gradient-to-r from-windy-gold to-windy-amber text-windy-dark font-bold rounded-lg text-sm hover:scale-105 transition-transform">
               Start Traveling
             </a>
@@ -40,6 +47,7 @@ export default function Navbar() {
                 {links.map(l => (
                   <a key={l.name} href={l.href} onClick={() => setOpen(false)} className="text-gray-400 hover:text-windy-amber">{l.name}</a>
                 ))}
+                <a href={APP_URL} onClick={() => setOpen(false)} className="text-gray-400 hover:text-windy-amber">Open in Windy Word</a>
               </div>
             </motion.div>
           )}
