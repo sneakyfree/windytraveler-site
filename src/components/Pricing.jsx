@@ -28,7 +28,7 @@ const plans = [
     price: { monthly: '$5.99', annual: '$49', lifetime: '$49' },
     period: { monthly: '/mo', annual: '/year', lifetime: '/year' },
     tagline: 'For the frequent traveler',
-    features: ['Unlimited offline packs', 'All 99+ languages', 'Full AI concierge', 'Priority everything', 'Clone voice translation', 'Booking integration', 'Traveler\'s Pack included'],
+    features: ['Unlimited offline packs', 'All 99+ languages', 'Full AI concierge', 'Priority everything', 'Clone voice translation', 'Booking integration', 'One regional pack included'],
     cta: 'Start Annual Plan',
     highlight: true,
     badge: 'BEST VALUE',
