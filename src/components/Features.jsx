@@ -4,7 +4,7 @@ const features = [
   {
     icon: '🌍',
     title: 'Offline Translation',
-    description: 'Download language packs before your trip. Translate in real-time with zero internet — on a plane, in a subway, middle of nowhere. 99+ languages.',
+    description: 'Download language packs before your trip. Translate in real-time with zero internet — on a plane, in a subway, middle of nowhere. 209 languages.',
     color: 'from-amber-500/20 to-transparent'
   },
   {

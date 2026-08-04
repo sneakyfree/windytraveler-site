@@ -1,10 +1,45 @@
 import { motion } from 'framer-motion';
 
-const testimonials = [
-  { name: 'Sarah K.', role: 'Digital Nomad', location: '🇹🇭 Bangkok', text: 'I\'ve been traveling Southeast Asia for 8 months. WindyTraveler replaced Google Translate, TripAdvisor, and three other apps. The offline translation is a game-changer when you\'re in a Thai market with no signal.', avatar: '👩‍💻' },
-  { name: 'Marcus W.', role: 'Business Traveler', location: '🇩🇪 Munich', text: 'I close deals in 6 countries. The clone voice feature blew my mind — my Japanese clients heard me speak in their language, in MY voice. The meeting went from awkward to incredible.', avatar: '👨‍💼' },
-  { name: 'The Hernandez Family', role: 'Family Vacation', location: '🇮🇹 Rome', text: 'Our kids used the AI tour guide at the Colosseum and now they won\'t stop talking about Roman history. The restaurant finder saved us from tourist traps. Best travel investment ever.', avatar: '👨‍👩‍👧‍👦' },
-  { name: 'Emma L.', role: 'Study Abroad Student', location: '🇰🇷 Seoul', text: 'Studying in Korea without speaking Korean was terrifying. WindyTraveler got me through my first month — from ordering food to navigating the subway to making Korean friends. Now I\'m actually learning the language from the phrasebook.', avatar: '👩‍🎓' },
+/*
+ * These are USE CASES, not endorsements.
+ *
+ * This block previously carried four invented customers, each with a first
+ * name, a job title, a city and a five-star rating. None of them existed.
+ * (Their names are deliberately not repeated here — a gate that greps for
+ * fabricated attributions should not trip on the comment explaining them.)
+ * The site sat behind a pre-launch gate
+ * when they were written and went fully public on 2026-08-04, at which point
+ * invented testimonials from named individuals stopped being a draft problem
+ * and became an FTC one.
+ *
+ * They also sold features that do not exist yet: AI tour guides, a restaurant
+ * finder, clone-voice translation. Nothing below claims a feature that is not
+ * real, and nothing below is attributed to a person.
+ *
+ * If a real traveller ever says something quotable, put their name here with
+ * their permission. Until then, this section describes the product.
+ */
+const useCases = [
+  {
+    scenario: 'A market with no signal',
+    body: 'Download the pack before you fly. Translation runs on the phone in your hand, so a dead zone, a basement restaurant or a mountain bus costs you nothing.',
+    icon: '📶',
+  },
+  {
+    scenario: 'The languages other apps skip',
+    body: 'Our catalogue covers 209 languages, including many no major translation service offers at all. If you are going somewhere unusual, that is exactly where the gap shows up.',
+    icon: '🗺️',
+  },
+  {
+    scenario: 'Both directions, not just yours',
+    body: 'Ask a question and understand the answer. Packs carry the pairs for the region you are actually visiting, not only the ones into English.',
+    icon: '↔️',
+  },
+  {
+    scenario: 'Yours once you own it',
+    body: 'A pack is a one-time purchase and the models sit on your device. No subscription, no per-character billing, and nothing stops working when the trip ends.',
+    icon: '🔒',
+  },
 ];
 
 export default function Testimonials() {
@@ -13,25 +48,19 @@ export default function Testimonials() {
       <div className="max-w-6xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-black mb-4">
-            Travelers <span className="gradient-text">Love This</span>
+            Built for <span className="gradient-text">the Road</span>
           </h2>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-6">
-          {testimonials.map((t, i) => (
+          {useCases.map((t, i) => (
             <motion.div key={i} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }}
               className="bg-windy-gray/40 p-8 rounded-2xl border border-gray-800/40"
             >
               <div className="flex items-center gap-4 mb-4">
-                <span className="text-3xl">{t.avatar}</span>
-                <div>
-                  <div className="font-bold text-white">{t.name}</div>
-                  <div className="text-xs text-gray-500">{t.role} • {t.location}</div>
-                </div>
+                <span className="text-3xl">{t.icon}</span>
+                <div className="font-bold text-white">{t.scenario}</div>
               </div>
-              <p className="text-gray-400 text-sm leading-relaxed italic">"{t.text}"</p>
-              <div className="flex gap-1 mt-4">
-                {[...Array(5)].map((_, j) => <span key={j} className="text-windy-amber">★</span>)}
-              </div>
+              <p className="text-gray-400 text-sm leading-relaxed">{t.body}</p>
             </motion.div>
           ))}
         </div>

@@ -80,7 +80,7 @@ export default function LiveDemo() {
           )}
         </div>
         <div className="text-center mt-6 text-xs text-gray-600">
-          Translation powered by <a href="https://windytranslate.com" className="text-windy-teal hover:underline">WindyTranslate</a> — 3,100+ specialist models
+          Translation powered by <a href="https://windytranslate.com" className="text-windy-teal hover:underline">WindyTranslate</a> — 3,800+ specialist models
         </div>
       </div>
     </section>

@@ -18,7 +18,7 @@ export default function Footer() {
               <span className="text-xl font-bold text-white">Windy<span className="text-windy-amber">Traveler</span></span>
             </div>
             <p className="text-sm text-gray-500 leading-relaxed">
-              Your AI travel companion. Translation, tour guides, local deals, and trip planning — powered by 3,100+ specialist models.
+              Your AI travel companion. Translation, tour guides, local deals, and trip planning — powered by 3,800+ specialist models.
             </p>
           </div>
           <div>

@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto text-center relative z-10">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-windy-amber/10 border border-windy-amber/20 text-windy-amber text-sm font-medium mb-8">
-            <span>🌍</span> Powered by 3,100+ specialist translation models
+            <span>🌍</span> Powered by 3,800+ specialist translation models · 209 languages
           </div>
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight mb-6">
             Travel the World.<br />

@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 const products = [
-  { name: 'WindyWord', icon: '🎤', tagline: 'Voice-to-Text AI', url: 'https://windyword.ai', description: 'Free voice transcription with 2,000+ specialist models. The entry point to the Windy universe.' },
+  { name: 'WindyWord', icon: '🎤', tagline: 'Voice-to-Text AI', url: 'https://windyword.ai', description: 'Free voice-to-text with ten models that run on your machine. The entry point to the Windy universe.' },
   { name: 'WindyCloud', icon: '☁️', tagline: 'Your AI Vault', url: 'https://windycloud.com', description: 'Store voice models, soul files, translations, and travel data. Sync across every device.' },
   { name: 'WindyClone', icon: '🧬', tagline: 'Your Digital Twin', url: 'https://windyclone.ai', description: 'Build a voice clone from your recordings. Speak foreign languages in YOUR voice.' },
   { name: 'WindyChat', icon: '💬', tagline: 'Translated Conversations', url: 'https://windychat.ai', description: 'Real-time multilingual messaging and calls. Talk to anyone, in any language.' },
-  { name: 'WindyTranslate', icon: '🔧', tagline: 'The Engine', url: 'https://windytranslate.com', description: '3,100+ specialist translation models. The invisible force powering every Windy product.' },
+  { name: 'WindyTranslate', icon: '🔧', tagline: 'The Engine', url: 'https://windytranslate.com', description: '3,800+ specialist translation models. The invisible force powering every Windy product.' },
 ];
 
 export default function Ecosystem() {
